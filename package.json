@@ -1,0 +1,38 @@
+{
+  "name": "agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm tsx src/index.ts",
+    "contract:emit": "prisma contract emit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.22.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "devDependencies": {
+    "@prisma/cli-engine": "^0.4.0",
+    "@types/node": "^26.6.2",
+    "prisma": "8.0.0-rc.15",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@anvia/core": "^1.5.0",
+    "@anvia/memory-prisma": "^1.2.1",
+    "@anvia/openai": "^1.1.5",
+    "@anvia/studio": "^1.2.4",
+    "@prisma/orm-postgres": "8.0.0-rc.11",
+    "@tavily/core": "^0.7.13",
+    "dotenv": "^18.0.1",
+    "zod": "^4.6.5"
+  }
+}
